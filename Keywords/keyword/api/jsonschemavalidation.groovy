@@ -28,7 +28,7 @@ import groovy.json.JsonOutput as JsonOutput
 import internal.GlobalVariable
 
 public class jsonschemavalidation {
-	
+
 	@Keyword
 	def getToken (ResponseObject response){
 		KeywordUtil.logInfo("HEADER\n"+response.getHeaderFields()+"\n\nBODY\n"+response.getResponseBodyContent())
@@ -44,7 +44,7 @@ public class jsonschemavalidation {
 			KeywordUtil.logInfo("Message: " + jsonResp.error_description)
 		}
 	}
-	
+
 	@Keyword
 	def getDataAssetById (ResponseObject response){
 		KeywordUtil.logInfo("HEADER\n"+response.getHeaderFields()+"\n\nBODY\n"+response.getResponseBodyContent())
@@ -57,5 +57,4 @@ public class jsonschemavalidation {
 			KeywordUtil.markFailed("API Failed 400")
 		}
 	}
-	
 }

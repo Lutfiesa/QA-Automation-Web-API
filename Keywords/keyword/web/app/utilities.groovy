@@ -21,7 +21,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class utilities {
-	
+
 	@Keyword
 	def loginWeb(user, pass) {
 
@@ -31,12 +31,11 @@ public class utilities {
 		WebUI.setText(findTestObject('Object Repository/Login Page/02_inputPassword'), pass)
 		WebUI.click(findTestObject('Object Repository/Login Page/03_buttonLogin'))
 	}
-	
+
 	@Keyword
 	def logoutWeb() {
-		
+
 		WebUI.click(findTestObject('Object Repository/Login Page/Main Page/04_buttonMenu'))
 		WebUI.click(findTestObject('Object Repository/Login Page/Main Page/05_buttonLogOut'))
-		
 	}
 }
