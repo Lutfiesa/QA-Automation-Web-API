@@ -3,6 +3,22 @@
  * This class is generated automatically by Katalon Studio and should not be modified or deleted.
  */
 
+import com.kms.katalon.core.testobject.ResponseObject
+
+
+
+def static "keyword.api.jsonschemavalidation.getToken"(
+    	ResponseObject response	) {
+    (new keyword.api.jsonschemavalidation()).getToken(
+        	response)
+}
+
+
+def static "keyword.api.jsonschemavalidation.getDataAssetById"(
+    	ResponseObject response	) {
+    (new keyword.api.jsonschemavalidation()).getDataAssetById(
+        	response)
+}
 
 
 def static "keyword.web.app.utilities.loginWeb"(
